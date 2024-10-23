@@ -1,19 +1,12 @@
 # Laboratório de Investigação
 
-# Conteúdos
-
-* CP1. Metodológicas de investigação científica
-* CP2. Escrita científica – como escrever um artigo/ensaio científico
-* CP3. Bases de dados bibliográficas e estatísticas (scopus.pt)
-  * CP3.1. Ciência Aberta
-* CP4. Normas bibliográficas
-    * CP4.1. Citação
-    * CP4.2. Bibliografia
-* CP5. Plágio e integridade científica
-* CP6. Redes Científicas
-* CP7. Comunidades e associações de desenvolvimento profissional
-* CP8. Planear o trabalho de investigação, projeto ou estágio
-* CP9. Tutorias individuais
+Documentação e recursos para a disciplina de Laboratório de Investigação. Como é que podemos abordar o problema, onde se procura responder a questões como:
+* Como é que podemos fazer uma revisão de literatura? 
+* Como é que podemos fazer uma pesquisa bibliográfica? 
+* Quais são as ferramentas que podemos utilizar?
+* Como é que podemos utilizar ASReview para a seleção de artigos? 
+* Como é que podemos utilizar o Zotero para a gestão de referências bibliográficas?
+* Como é que podemos utilizar a inteligência artificial para apoiar a investigação?
 
 # Workflow para a elaboração de um plano de investigação
 * Qual é o problema subjacente à investigação do estudo ou projeto? 
