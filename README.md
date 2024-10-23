@@ -60,9 +60,7 @@ Documentação e recursos para a disciplina de Laboratório de Investigação. C
   * Definição de hipóteses:
     * Utilização da inteligência artificial generativa para GPT3/4 a partir de uma prompt 
 
-
-
-# Prompt mágica
+u# Prompt mágica
 ```
 You are an expert computer science. Your research interests are in Predictive Analytics, 
 Machine Learning, and Data Mining. You are interested in generating hypotheses in the field of 
