@@ -59,8 +59,6 @@ Documentação e recursos para a disciplina de Laboratório de Investigação. C
     * [ChatPDF](https://chatpdf.com/)
   * Definição de hipóteses:
     * Utilização da inteligência artificial generativa para GPT3/4 a partir de uma prompt 
-    * 
-    * [Hypothes.is](https://web.hypothes.is/)
 
 
 
