@@ -82,28 +82,6 @@ They should not be incremental.
 Make sure that your hypotheses are precisely stated and incorporate a comparison
 group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses.
 
-```
-# Metodologias de ensino e de aprendizagem
-
-Os métodos de ensino incluem sessões expositivas (presenciais) e de orientação tutorial (ambas presenciais e à distância). As aulas
-presenciais recorrer-se-á às seguintes metodologias:
-M1 – método expositivo (para a exposição dos conceitos e temáticas fundamentais)
-M5 – método ativo (desenvolvimento de competências e do trabalho individual)
-Nas aulas a distância (síncronas) será ainda usado o apoio tutorial para o trabalho autónomo e recorrer-se-á à seguinte metodologia:
-M6 – Autoestudo (apoio tutorial ao trabalho autónomo do aluno~
-
-# Avaliação
-
-A avaliação será baseada na apresentação e defesa oral do plano de dissertação / projeto / estágio perante um júri que venha a ser
-atribuído. O plano é constituído por título/tema provisório do trabalho, objetivos, metodologia prevista, estrutura/ índice provisório, principais
-referências bibliográficas consultadas, calendarização das atividades, equipa de orientação e indicação de eventuais constrangimentos
-estimados.
-O júri é presidido pelo Coordenador de Curso, ou alguém por si delegado, pelo Orientador ou Coorientador e por um Professor ou
-Investigador doutorado ou especialista no domínio em que se insere o trabalho. A classificação final é calculada através da média
-aritmética das classificações atribuídas pelos membros do júri em cada um dos seguintes parâmetros de avaliação:
-A1. Qualidade técnico-científica do plano apresentado: 50%
-A2. Qualidade da apresentação e discussão pública: 50%
-
 # Bibliografia
 
 Biggam, J. (2021). Succeeding with Your Master’s Dissertation: A Step-by-Step Handbook. McGraw-Hill Education.
