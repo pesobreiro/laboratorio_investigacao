@@ -1,33 +1,6 @@
 # Laboratório de Investigação
 
-Preparar alunos/tese/dissertação/estágio   
-
- UC (semestral) do curso de Mestrado em informática Aplicada desta escola, para um total de 9h no semestre.
-
- ![Plano de estudos](./img/plano_estudos.png)
-
-* Laboratório de Investigação, os estudantes desenvolvem o plano de trabalho para a Dissertação / Projeto / Estágio
-onde é promovido um trabalho exigente de investigação
-* Promover a investigação e desenvolvimento – a atual proposta irá promover (em diversas UC, mas com especial enfoque nas
-UCs de Laboratório de Investigação e de Trabalho final de Dissertação, Trabalho de Projeto e Estágio) o desenvolvimento de
-atividades de investigação, essencialmente aplicada, contribuindo para transferir conhecimento para o tecido social, económico e
-empresarial da região e do país, criando valor e inovação.
-
-# Objetivo
-
-Esta unidade curricular tem como objetivo principal a preparação de Dissertação, Projeto ou Estágio.
-
-* OA1. Capacitar os alunos a fazerem uso dos conhecimentos teóricos, científicos e técnicos adquiridos (nas restantes unidades curriculares do mestrado e das anteriores graduações no domínio da informática)
-* OA2. Compreender alguns conceitos básicos de pesquisa e suas metodologias
-* OA3. Identificar temas de trabalho inovadores e originais e a equipa de orientação, quer o trabalho seja de natureza mais científica ou mais técnica
-* OA4. Executar revisão da literatura e sistematizar a literatura relevante sobre o tema selecionado
-* OA5. Aplicar estratégias metodológicas de investigação e técnicas de escrita científica na realização de um estudo preliminar sobre o tema selecionado
-* OA6. Elaborar e apresentar o plano de trabalho justificado com a identificação da metodologia, da equipa de orientação e de eventuais constrangimentos
-
 # Conteúdos
-
-
-https://www.researchkick.com/start
 
 * CP1. Metodológicas de investigação científica
 * CP2. Escrita científica – como escrever um artigo/ensaio científico
@@ -36,7 +9,7 @@ https://www.researchkick.com/start
 * CP4. Normas bibliográficas
     * CP4.1. Citação
     * CP4.2. Bibliografia
-* CP5. Plágio e integridade científica (turnitin / [scrib](https:/www.scribbr.com/plagiarism-checker/) / [grammarly](https://www.grammarly.com/?msockid=2ba8cda0690a6fb205c1d947686d6e7d) )
+* CP5. Plágio e integridade científica
 * CP6. Redes Científicas
 * CP7. Comunidades e associações de desenvolvimento profissional
 * CP8. Planear o trabalho de investigação, projeto ou estágio
