@@ -77,6 +77,13 @@ Make sure that your hypotheses are precisely stated and incorporate a comparison
 group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses.
 ```
 
+
+# Documentos de apoio
+
+* Etapas gerais para revisão de literatura [aqui](./docs/01.revisao_literatura.pdf)
+* Utilização do [Zotero](./docs/02.zotero_Ferramentas.pdf)
+* Instalação [Docker](./docs/03.instalacao_docker.pdf), mais simples é mesmo com Anaconda para ASReview
+
 # Bibliografia
 
 Biggam, J. (2021). Succeeding with Your Master’s Dissertation: A Step-by-Step Handbook. McGraw-Hill Education.
