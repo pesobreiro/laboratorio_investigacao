@@ -99,11 +99,11 @@ Baseado neste problema de investigação foram formuladas as seguintes questões
 
 The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, Comparison, Outcome and Context (PICOC).
 
-Population: Estudos que abordem utilização de drones para prever incêndios
-Intervention: Algoritmos de Machine Learning para prever evolução dos incêndios
-Comparison: Diferentes tipos de algoritmos para prever os incêndios
-Outcome: Resumo das questões de pesquisa, algoritmos utilizados e lacunas existentes na investigação
-Context: Academia
+* Population: Estudos que abordem utilização de drones para prever incêndios
+* Intervention: Algoritmos de Machine Learning para prever evolução dos incêndios
+* Comparison: Diferentes tipos de algoritmos para prever os incêndios
+* Outcome: Resumo das questões de pesquisa, algoritmos utilizados e lacunas existentes na investigação
+* Context: Academia
 
 Baseado no PICOC seguindo a abordagem recomendada por Kitchmen e Charters (REF) o critério de pesquisa foi:
 
