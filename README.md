@@ -1,6 +1,6 @@
 # Laboratório de Investigação
 
-Investigar consiste em identificar problemas, colocar questões, refletir, admitir erros e aprender novas coisas, o que pode ser recompensador:
+Investigar consiste em identificar problemas, colocar questões, refletir, admitir erros, aprender novas coisas e tentar encontrar soluções utilizando um método científico, o que pode ser recompensador:
 
 ![Job Offer](./img/oferta.jpg)
 
