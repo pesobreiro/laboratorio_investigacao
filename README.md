@@ -1,5 +1,9 @@
 # Laboratório de Investigação
 
+Investigar consiste em identificar problemas, colocar questões, refletir, admitir erros e aprender novas coisas, o que pode ser recompensador:
+
+![Job Offer](./img/oferta.jpg)
+
 Documentação e recursos para a disciplina de Laboratório de Investigação. Como é que podemos abordar o problema, onde se procura responder a questões como:
 * Como é que podemos fazer uma revisão de literatura? 
 * Como é que podemos fazer uma pesquisa bibliográfica? 
