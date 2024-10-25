@@ -45,8 +45,8 @@ Documentação e recursos para a disciplina de Laboratório de Investigação. C
 * [IEEE Digital Library](http://ieeexplore.ieee.org)
 * [ISI Web of Science](http://www.isiknowledge.com)
 * [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/)
-* [Science@Direct](http://www.sciencedirect.com)
-* [Scopus](http://www.scopus.com)
+* [Science@Direct](http://www.sciencedirect.comg
+g [Scopus](http://www.scopus.com)
 * [Springer Link](http://link.springer.com)
 
 # Ferramentas apoio
@@ -83,6 +83,37 @@ group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses
 * Etapas gerais para revisão de literatura [aqui](./docs/01.revisao_literatura.pdf)
 * Utilização do [Zotero](./docs/02.zotero_Ferramentas.pdf)
 * Instalação [Docker](./docs/03.instalacao_docker.pdf), mais simples é mesmo com Anaconda para ASReview
+
+
+# Exemplo PICOC
+
+## Caso 1
+
+Problema de estudo: Utilização de drones para prever a evolução de um incêndio através da inteligência Artificial
+
+Baseado neste problema de investigação foram formuladas as seguintes questões: 
+
+* RQ1: Qual é o estado da arte da investigação que está a ser desenvolvida?
+* RQ2: Quais são os algoritmos que são utilizados para prever a evolução do incêndio?
+* RQ3: Quais são as variáveis normalmente utilizadas para perceber a evolução dos incêndios?
+
+The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, Comparison, Outcome and Context (PICOC).
+
+Population: Estudos que abordem utilização de drones para prever incêndios
+Intervention: Algoritmos de Machine Learning para prever evolução dos incêndios
+Comparison: Diferentes tipos de algoritmos para prever os incêndios
+Outcome: Resumo das questões de pesquisa, algoritmos utilizados e lacunas existentes na investigação
+Context: Academia
+
+Baseado no PICOC seguindo a abordagem recomendada por Kitchmen e Charters (REF) o critério de pesquisa foi:
+
+(incêndio) AND (prediction )
+
+A partir da keywords de pesquisa, vamos procurar nas base de dados: SpringerLink, Science@Direct, 
+IEEE Digital Library, and ACM Digital Library
+
+Onde realizam a pesquisa no title, abstract, and keywords identificando um intervalo de pesquisa January 2010 and 2024 (Outubro),
+definindo os critérios de exclusão (Livros, patentes, teses de mestrado e artigos que não estão em inglês).
 
 # Bibliografia
 
