@@ -108,7 +108,7 @@ The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, C
 Baseado no PICOC seguindo a abordagem recomendada por Kitchmen e Charters (REF) o critério de pesquisa foi, por 
 exemplo:
 
-`(wildfire) AND (drones) ("machine Learning" OR prediction OR "Deep Learning" OR "Predictive Analytics")`
+`(wildfire) AND (drones) AND ("machine Learning" OR prediction OR "Deep Learning" OR "Predictive Analytics")`
 
 A partir da keywords de pesquisa, vamos procurar nas base de dados: SpringerLink, Science@Direct, 
 IEEE Digital Library, and ACM Digital Library
