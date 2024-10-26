@@ -85,7 +85,7 @@ group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses
 * Instalação [Docker](./docs/03.instalacao_docker.pdf), mais simples é mesmo com Anaconda para ASReview
 
 
-# Exemplo PICOC
+# Exemplo 
 
 ## Caso 1
 
@@ -114,6 +114,14 @@ IEEE Digital Library, and ACM Digital Library
 
 Onde realizam a pesquisa no title, abstract, and keywords identificando um intervalo de pesquisa January 2010 and 2024 (Outubro),
 definindo os critérios de exclusão (Livros, patentes, teses de mestrado e artigos que não estão em inglês).
+
+Convém fazer uma contextualização em relação a problema, nomeadamente para perceber como é que se está a investigar, tipo
+de terminologia utilizada, por exemplo para perceber que estudos estão a ser feitos para "afinar" as questões de pesquisa e 
+termos a utilizar na string de pesquisa e fazer a introdução à revisão de literatura.
+Ver exemplo [aqui](https://elicit.com/notebook/6b00c2c5-a34a-4df3-94ee-3db1663e53a5). Depois podem interagir com os PDFs dos artigos e pedirem para resumir as ideias principais, utilizando por exemplo ChatPDF ou analisando com mais detalhe lendo com 
+algum cuidado os artigos.
+Outro aspeto importante é perceber se existem revisões de literatura similares ao que estão a fazer e não fazer o mesmo. Caso
+existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
 
 # Bibliografia
 
