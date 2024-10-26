@@ -95,7 +95,7 @@ Baseado neste problema de investigação foram formuladas as seguintes questões
 
 * RQ1: Qual é o estado da arte da investigação que está a ser desenvolvida?
 * RQ2: Quais são os algoritmos que são utilizados para prever a evolução do incêndio?
-* RQ3: Quais são as variáveis normalmente utilizadas para perceber a evolução dos incêndios?
+* RQ3: Quais são as variáveis utilizadas para prever a evolução dos incêndios?
 
 The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, Comparison, Outcome and Context (PICOC).
 
