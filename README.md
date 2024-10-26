@@ -114,10 +114,10 @@ A partir da keywords de pesquisa, vamos procurar nas base de dados: SpringerLink
 IEEE Digital Library, and ACM Digital Library.
 Os artigos identificados podem ser colocados num quadro resumo com o número de artigos identificados nas diferentes bases de dados.
 
-Onde realizam a pesquisa no title, abstract, and keywords identificando um intervalo de pesquisa January 2010 and 2024 (Outubro),
-definindo os critérios de exclusão (Livros, patentes, teses de mestrado e artigos que não estão em inglês).
+A pesquisa é feita no title, abstract, and keywords, definindo um intervalo de pesquisa, por exemplo January 2010 and 
+2024 (Outubro), definindo os critérios de exclusão (Livros, patentes, teses de mestrado e artigos que não estão em inglês).
 Para realizar o screening dos artigos podem utilizar o ASReview para ajudar no processo de seleção e organizar os artigos
-selecionados.
+selecionados. Também devem colocar os critérios de inclusão (Artigos com revisão por pares).
 
 Convém fazer uma contextualização em relação a problema, nomeadamente para perceber como é que se está a investigar, tipo
 de terminologia utilizada, por exemplo para perceber que estudos estão a ser feitos para "afinar" as questões de pesquisa e 
