@@ -64,6 +64,17 @@ g [Scopus](http://www.scopus.com)
   * Definição de hipóteses:
     * Utilização da inteligência artificial generativa para GPT3/4 a partir de uma prompt 
 
+## Bibliometrix
+
+```
+install.packages("bibliometrix")
+```
+
+file <- "./exemplos/caso1/ScienceDirect_citations_1731876458350.bib"
+
+M <- convert2df(file = file, dbsource = "isi", format = "bibtex")
+
+## Pesquisa com AI
 A Prompt mágica
 
 ```
@@ -168,6 +179,8 @@ Vamos colocar um exemplo com as pesquisas nas bases de dados:
 * IEEE Digital Library
 * ACM Digital Library
 
+Na springerlink exportar os ficheiros um por cada página ([ver ficheiros](./exemplos/caso1/)) .
+
 ### Processar os artigos analisados para 
 
 
@@ -181,3 +194,5 @@ Vamos colocar um exemplo com as pesquisas nas bases de dados:
 Press.
 
 [3]: Kitchenham, B., & Charters, S. (2007). Guidelines for performing Systematic Literature Reviews in Software Engineering. Keele University
+
+[4]: Aria, M., & Cuccurullo, C. (2017). bibliometrix: An R-tool for comprehensive science mapping analysis. Journal of Informetrics, 11(4), 959–975.
