@@ -87,11 +87,7 @@ group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses
 
 # Exemplo 
 
-To development of the systematic literature review, the methodology applied by Kitchenham & Charters [55] was adopted and developed in three stages, namely, planning, conducting and reporting.
-
-
-
-TODO: COLOCAR A REF
+To development of the systematic literature review, the methodology applied by Kitchenham & Charters [3] was adopted and developed in three stages, namely, planning, conducting and reporting.
 
 ![Research steps](./img/phases_kitchenman_charters.png)
 
@@ -100,21 +96,22 @@ Também podemos gerar o diagrama com [plantuml](https://plantuml.com/).
 ```plantuml
 @startuml
 
-left to right direction 
-
+title Research Steps
 |Plan|
 start
 :Define\nresearch\nneed;
 :Identify\nresearch\nquestions;
 :Develop\nreview\nprotocol;
+
 |Conduct|
-:Identify\nresearch;
-:Study\nselection;
-:Assess\nStudies\nQuality;
+:Identify research;
+:Study selection;
+:Assess Studies Quality;
 :Extract data;
-:Data\nSynthesis;
+:Data Synthesis;
+
 |Report|
-:Report\nreview;
+:Report review;
 stop
 
 @enduml
@@ -166,8 +163,10 @@ existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
 ### Pesquisa nas bases de dados bibliográficas
 
 Vamos colocar um exemplo com as pesquisas nas bases de dados:
-* base de dados....
-* ....
+* SpringerLink
+* Science@Direct, 
+* IEEE Digital Library
+* ACM Digital Library
 
 ### Processar os artigos analisados para 
 
@@ -176,6 +175,9 @@ Vamos colocar um exemplo com as pesquisas nas bases de dados:
 
 # Bibliografia
 
-Biggam, J. (2021). Succeeding with Your Master’s Dissertation: A Step-by-Step Handbook. McGraw-Hill Education.
-Dawson, C. (2019). Introduction to Research Methods 5th Edition: A Practical Guide for Anyone Undertaking a Research Project. Robinson
+[1]: Biggam, J. (2021). Succeeding with Your Master’s Dissertation: A Step-by-Step Handbook. McGraw-Hill Education.
+
+[2]: Dawson, C. (2019). Introduction to Research Methods 5th Edition: A Practical Guide for Anyone Undertaking a Research Project. Robinson
 Press.
+
+[3]: Kitchenham, B., & Charters, S. (2007). Guidelines for performing Systematic Literature Reviews in Software Engineering. Keele University
