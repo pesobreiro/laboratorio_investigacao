@@ -163,8 +163,8 @@ existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
 ### Pesquisa nas bases de dados bibliográficas
 
 Vamos colocar um exemplo com as pesquisas nas bases de dados:
-* SpringerLink
-* Science@Direct, 
+* [SpringerLink](https://link.springer.com/search?new-search=true&query=%28wildfire%29+AND+%28drones%29+AND+%28%22machine+Learning%22+OR+prediction+OR+%22Deep+Learning%22+OR+%22Predictive+Analytics%22%29)
+* [Science@Direct](https://www.sciencedirect.com/search?qs=%28wildfire%29%20AND%20%28drones%29%20AND%20%28%22machine%20Learning%22%20OR%20prediction%20OR%20%22Deep%20Learning%22%20OR%20%22Predictive%20Analytics%22%29) 
 * IEEE Digital Library
 * ACM Digital Library
 
