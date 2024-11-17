@@ -179,12 +179,32 @@ Vamos colocar um exemplo com as pesquisas nas bases de dados:
 * IEEE Digital Library
 * ACM Digital Library
 
-Na springerlink exportar os ficheiros um por cada página ([ver ficheiros](./exemplos/caso1/)) .
+Na springerlink exportar os ficheiros um por cada página ([ver ficheiros](./exemplos/caso1/)) depois processamos em R, ver [exemplo](./exemplos/caso1/1.slr_bibtexCleaning.Rmd).
 
-### Processar os artigos analisados para 
+### Processar os artigos analisados
 
+Ver exemplo de bibliometrix para processar os artigos analisados [aqui](./exemplos/caso1/bibliometrix.Rmd).
 
 ### Seleção de artigos com asreview
+
+Ver apresentação como é que se pode utilizar o ASReview para selecionar os artigos [aqui](./docs/01.revisao_literatura.pdf).
+
+
+###  Importar as referências selecionadas para o Zotero
+
+```R
+install.packages("bibtex")       # Para exportar BibTeX
+# Carregar bibliotecas
+library(bibliometrix)
+library(bibtex)
+
+# Exemplo: Exportar o dataframe `merged_data` para BibTeX
+write.bib(as.BibEntry(merged_data), file = "exported_data.bib")
+```
+
+Depois importar no zotero.
+
+Um exemplo de uma SLR [aqui](https://ieeexplore.ieee.org/document/9693903)
 
 # Bibliografia
 

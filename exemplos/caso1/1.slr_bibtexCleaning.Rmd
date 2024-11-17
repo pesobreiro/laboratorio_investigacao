@@ -79,27 +79,94 @@ for (file in bib_files) {
 print("Final dimensions of the merged data:")
 print(dim(science))
 ```
-
-
-# Science Direct
+Output
 ```{r}
-science1<-bib2df(file = './articles/ScienceDirect_citations_1731876458350.bib')
-dim(science1)
-science2<-bib2df(file = 'articles/scienceDirect_withContractual2.bib')
-dim(science2)
+names(science)
+science
+```
 
-#merge two dataframes
-science <- rbind(science1,science2)
+## Artigos sem abstracts
+
+```{r}
 dim(science)
 
-names(science)
-
-ls() # check object in workspace
-#remove dataframes
-rm(science1)
-rm(science2)
+science %>% filter(is.na(ABSTRACT)) %>% select(TITLE,URL,ABSTRACT,URL,DOI)
 
 ```
+
+```{r}
+dim(science)
+
+science %>% filter(!is.na(ABSTRACT)) %>% select(TITLE,URL,ABSTRACT,URL,DOI)
+
+```
+
+Vamos utilizar o bibliometrix
+
+* AU: Authors
+* TI: Document Title
+* SO: Publication Name (or Source)
+* JI: ISO Source Abbreviation
+* DT: Document Type
+* DE: Authors' Keywords
+* ID: Keywords associated by SCOPUS or WoS database
+* AB: Abstract
+* C1: Author Address
+* RP: Reprint Address
+* CR: Cited References
+* TC: Times Cited
+* PY: Year
+* SC: Subject Category
+* UT: Unique Article Identifier
+* DB: Database
+
+
+```{r}
+# Load necessary library
+library(bibliometrix)
+
+# Define the folder containing the .bib files
+bib_files_path <- "./articles"
+
+# Get a list of all .bib files in the directory
+bib_files <- list.files(path = bib_files_path, pattern = "\\.bib$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+data_list <- list()
+
+# Loop through each .bib file
+for (file in bib_files) {
+  print(paste("Processing file:", file)) # Display progress
+  
+  # Read the .bib file using bibliometrix
+  science_data <- convert2df(file = file, dbsource = "scopus", format = "bibtex")
+  
+  # Display dimensions of the current file's data
+  print(dim(science_data))
+  
+  # Append the data to the list
+  data_list[[file]] <- science_data
+}
+
+# Standardize column names across all data frames
+common_cols <- Reduce(intersect, lapply(data_list, colnames))
+
+# Retain only the common columns and combine data frames
+merged_data <- do.call(rbind, lapply(data_list, function(df) df[, common_cols]))
+
+# Display the dimensions of the final merged dataset
+print("Final dataset dimensions:")
+print(dim(merged_data))
+
+# View a preview of the data
+head(merged_data)
+
+```
+
+
+
+
+
 
 
 

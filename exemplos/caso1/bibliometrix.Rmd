@@ -1,0 +1,199 @@
+---
+title: 'A Systematic Literature Review'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  html_notebook: default
+  word_document: default
+---
+This was developed with bib2df version 1.1.1, installation instructions available [here][1], 
+and one example [here][2]. Github project is available [here][3]
+
+[1]: https://docs.ropensci.org/bib2df/
+[2]: https://docs.ropensci.org/bib2df/articles/bib2df.html
+[3]: https://github.com/ropensci/bib2df
+
+Is better to confirm that the files are in UTF-8 encoding. 
+The bibtex files must be checked. There should be spaces between "=":
+```
+@Article{Binmore2008,
+  Title = {Do Conventions Need to Be Common Knowledge?},
+  Author = {Binmore, Ken},
+  Journal = {Topoi},
+  Year = {2008},
+  Number = {1},
+  Pages = {17--27},
+  Volume = {27}
+}
+```
+This code correct that:
+```
+tx<-readLines(file)
+tx2<-gsub(pattern = "=\\{",replacement = " = {",x = tx)
+writeLines(text = tx2,con = 'corrected_scopus.bib')
+
+```
+
+# Import Libraries
+
+```{r message=FALSE, warning=FALSE}
+# Setup library
+library(bib2df)
+library(bibtex)
+library(tibble)
+library(dplyr)
+
+#setwd('C:/nuvem/Dropbox/doutoramento/tese/SLRDropout/analysis')
+```
+
+List all the files with bib extension
+```{r}
+# Define the folder where the .bib files are located
+bib_files_path <- "./articles"
+
+# Get a list of all .bib files in the directory
+bib_files <- list.files(path = bib_files_path, pattern = "ScienceDirect.*\\.bib$", full.names = TRUE)
+
+# Initialize an empty data frame to store the merged data
+science <- NULL
+
+# Loop through each .bib file, process it, and merge it
+for (file in bib_files) {
+  # Read the .bib file into a data frame
+  science_data <- bib2df(file = file)
+  
+  # Print the dimensions of the current file's data
+  print(paste("Processing file:", file))
+  print(dim(science_data))
+  
+  # Merge the current data frame with the main data frame
+  if (is.null(science)) {
+    science <- science_data
+  } else {
+    science <- rbind(science, science_data)
+  }
+}
+
+# Print the final dimensions of the merged data
+print("Final dimensions of the merged data:")
+print(dim(science))
+```
+Output
+```{r}
+names(science)
+science
+```
+
+## Artigos sem abstracts
+
+```{r}
+dim(science)
+
+science %>% filter(is.na(ABSTRACT)) %>% select(TITLE,URL,ABSTRACT,URL,DOI)
+
+```
+
+```{r}
+dim(science)
+
+science %>% filter(!is.na(ABSTRACT)) %>% select(TITLE,URL,ABSTRACT,URL,DOI)
+
+```
+
+Vamos utilizar o bibliometrix
+
+* AU: Authors
+* TI: Document Title
+* SO: Publication Name (or Source)
+* JI: ISO Source Abbreviation
+* DT: Document Type
+* DE: Authors' Keywords
+* ID: Keywords associated by SCOPUS or WoS database
+* AB: Abstract
+* C1: Author Address
+* RP: Reprint Address
+* CR: Cited References
+* TC: Times Cited
+* PY: Year
+* SC: Subject Category
+* UT: Unique Article Identifier
+* DB: Database
+
+
+```{r}
+# Load necessary library
+library(bibliometrix)
+
+# Define the folder containing the .bib files
+bib_files_path <- "./articles"
+
+# Get a list of all .bib files in the directory
+bib_files <- list.files(path = bib_files_path, pattern = "\\.bib$", full.names = TRUE)
+
+# Initialize an empty list to store data frames
+data_list <- list()
+
+# Loop through each .bib file
+for (file in bib_files) {
+  print(paste("Processing file:", file)) # Display progress
+  
+  # Read the .bib file using bibliometrix
+  science_data <- convert2df(file = file, dbsource = "scopus", format = "bibtex")
+  
+  # Display dimensions of the current file's data
+  print(dim(science_data))
+  
+  # Append the data to the list
+  data_list[[file]] <- science_data
+}
+
+# Standardize column names across all data frames
+common_cols <- Reduce(intersect, lapply(data_list, colnames))
+
+# Retain only the common columns and combine data frames
+merged_data <- do.call(rbind, lapply(data_list, function(df) df[, common_cols]))
+
+# Display the dimensions of the final merged dataset
+print("Final dataset dimensions:")
+print(dim(merged_data))
+
+# View a preview of the data
+head(merged_data)
+
+```
+
+
+```{r}
+results <- biblioAnalysis(merged_data, sep = ";")
+options(width=100)
+S <- summary(object = results, k = 10, pause = FALSE)
+```
+
+```{r}
+plot(x = results, k = 10, pause = FALSE)
+```
+
+
+Artigos mais citados
+```{r}
+CR <- citations(merged_data, field = "article", sep = ";")
+cbind(CR$Cited[1:10])
+```
+
+```{r}
+CR <- localCitations(merged_data, sep = ";")
+CR$Authors[1:10,]
+```
+
+```{r}
+DF <- dominance(results, k = 10)
+DF
+```
+
+
+```{r}
+topAU <- authorProdOverTime(merged_data, k = 10, graph = TRUE)
+```
+
+Mais informações sobre o bibliometrix e exemplos [aqui](https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html)
