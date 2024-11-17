@@ -48,12 +48,60 @@ library(dplyr)
 ```
 
 List all the files with bib extension
-
 ```{r}
-files<-list.files(path = './articles/',pattern = '\\.bib$')
-files
+# Define the folder where the .bib files are located
+bib_files_path <- "./articles"
+
+# Get a list of all .bib files in the directory
+bib_files <- list.files(path = bib_files_path, pattern = "ScienceDirect.*\\.bib$", full.names = TRUE)
+
+# Initialize an empty data frame to store the merged data
+science <- NULL
+
+# Loop through each .bib file, process it, and merge it
+for (file in bib_files) {
+  # Read the .bib file into a data frame
+  science_data <- bib2df(file = file)
+  
+  # Print the dimensions of the current file's data
+  print(paste("Processing file:", file))
+  print(dim(science_data))
+  
+  # Merge the current data frame with the main data frame
+  if (is.null(science)) {
+    science <- science_data
+  } else {
+    science <- rbind(science, science_data)
+  }
+}
+
+# Print the final dimensions of the merged data
+print("Final dimensions of the merged data:")
+print(dim(science))
 ```
-Reading bibtex source files
+
+
+# Science Direct
+```{r}
+science1<-bib2df(file = './articles/ScienceDirect_citations_1731876458350.bib')
+dim(science1)
+science2<-bib2df(file = 'articles/scienceDirect_withContractual2.bib')
+dim(science2)
+
+#merge two dataframes
+science <- rbind(science1,science2)
+dim(science)
+
+names(science)
+
+ls() # check object in workspace
+#remove dataframes
+rm(science1)
+rm(science2)
+
+```
+
+
 
 # ACM
 ```{r warning=FALSE}
@@ -74,25 +122,6 @@ str(acm)
 ieee<-bib2df(file = 'articles/ieee.bib')
 names(ieee)
 dim(ieee)
-
-```
-# Science Direct
-```{r}
-science1<-bib2df(file = 'articles/scienceDirect_withContractual1.bib')
-dim(science1)
-science2<-bib2df(file = 'articles/scienceDirect_withContractual2.bib')
-dim(science2)
-
-#merge two dataframes
-science <- rbind(science1,science2)
-dim(science)
-
-names(science)
-
-ls() # check object in workspace
-#remove dataframes
-rm(science1)
-rm(science2)
 
 ```
 Incorrect data discarded 8 incomplete information tot
