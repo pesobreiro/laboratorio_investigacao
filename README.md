@@ -53,7 +53,7 @@ g [Scopus](http://www.scopus.com)
 
 * [ResearchKit](https://www.researchkick.com/start)
 * [Scribbr](https://www.scribbr.com/plagiarism-checker/)
-* Bibliometrix
+* [Bibliometrix](https://www.bibliometrix.org/home/)
 * AI powered literature review and tools for researchers:
   * Revisão de literatura:
     * [Perplexity](https://perplexity.ai/):  Answering questions in a comprehensive and informative way, similar to a search engine but with more conversational abilities
@@ -86,6 +86,42 @@ group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses
 
 
 # Exemplo 
+
+To development of the systematic literature review, the methodology applied by Kitchenham & Charters [55] was adopted and developed in three stages, namely, planning, conducting and reporting.
+
+
+
+TODO: COLOCAR A REF
+
+![Research steps](./img/phases_kitchenman_charters.png)
+
+Também podemos gerar o diagrama com [plantuml](https://plantuml.com/).
+
+```plantuml
+@startuml
+
+left to right direction 
+
+|Plan|
+start
+:Define\nresearch\nneed;
+:Identify\nresearch\nquestions;
+:Develop\nreview\nprotocol;
+|Conduct|
+:Identify\nresearch;
+:Study\nselection;
+:Assess\nStudies\nQuality;
+:Extract data;
+:Data\nSynthesis;
+|Report|
+:Report\nreview;
+stop
+
+@enduml
+```
+
+Enquadrar o exemplo com
+
 
 ## Caso 1
 
@@ -126,6 +162,17 @@ Ver exemplo [aqui](https://elicit.com/notebook/6b00c2c5-a34a-4df3-94ee-3db1663e5
 algum cuidado os artigos.
 Outro aspeto importante é perceber se existem revisões de literatura similares ao que estão a fazer e não fazer o mesmo. Caso
 existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
+
+### Pesquisa nas bases de dados bibliográficas
+
+Vamos colocar um exemplo com as pesquisas nas bases de dados:
+* base de dados....
+* ....
+
+### Processar os artigos analisados para 
+
+
+### Seleção de artigos com asreview
 
 # Bibliografia
 
