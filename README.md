@@ -202,7 +202,7 @@ library(bibtex)
 write.bib(as.BibEntry(merged_data), file = "exported_data.bib")
 ```
 
-Depois importar no zotero.
+Depois importar no zotero através do menu `File -> Import...` e selecionar o ficheiro `exported_data.bib`.
 
 Um exemplo de uma SLR [aqui](https://ieeexplore.ieee.org/document/9693903) e [aqui](https://aisel.aisnet.org/capsi2021/18)(mais simples).
 
