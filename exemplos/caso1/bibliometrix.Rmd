@@ -85,7 +85,7 @@ names(science)
 science
 ```
 
-## Artigos sem abstracts
+Artigos sem abstracts
 
 ```{r}
 dim(science)
@@ -93,6 +93,7 @@ dim(science)
 science %>% filter(is.na(ABSTRACT)) %>% select(TITLE,URL,ABSTRACT,URL,DOI)
 
 ```
+Artigos com abstracts
 
 ```{r}
 dim(science)

@@ -140,6 +140,7 @@ Baseado neste problema de investigação foram formuladas as seguintes questões
 * RQ1: Qual é o estado da arte da investigação que está a ser desenvolvida?
 * RQ2: Quais são os algoritmos que são utilizados para prever a evolução do incêndio?
 * RQ3: Quais são as variáveis utilizadas para prever a evolução dos incêndios?
+* RQ4: Quais são os equipamentos que estão ser utilizados para recolher os dados?
 
 The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, Comparison, Outcome and Context (PICOC).
 
@@ -147,7 +148,7 @@ The authors used the Petticrew and Roberts (CITACAO) Population, Intervention, C
 * Intervention: Algoritmos de Machine Learning para prever evolução dos incêndios
 * Comparison: Diferentes tipos de algoritmos para prever os incêndios
 * Outcome: Resumo das questões de pesquisa, algoritmos utilizados e lacunas existentes na investigação
-* Context: Academia
+* Context: Academia e indústria
 
 Baseado no PICOC seguindo a abordagem recomendada por Kitchmen e Charters (REF) o critério de pesquisa foi, por 
 exemplo:
@@ -163,19 +164,13 @@ A pesquisa é feita no title, abstract, and keywords, definindo um intervalo de 
 Para realizar o screening dos artigos podem utilizar o ASReview para ajudar no processo de seleção e organizar os artigos
 selecionados. Também devem colocar os critérios de inclusão (artigos com revisão por pares).
 
-Convém fazer uma contextualização em relação a problema, nomeadamente para perceber como é que se está a investigar, tipo
-de terminologia utilizada, por exemplo para perceber que estudos estão a ser feitos para "afinar" as questões de pesquisa e 
-termos/sinónimos a utilizar na string de pesquisa para fazer a introdução à revisão de literatura.
-Ver exemplo [aqui](https://elicit.com/notebook/6b00c2c5-a34a-4df3-94ee-3db1663e53a5). Depois podem interagir com os PDFs dos artigos e pedirem para resumir as ideias principais, utilizando por exemplo ChatPDF ou analisando com mais detalhe, lendo com 
-algum cuidado os artigos.
-Outro aspeto importante é perceber se existem revisões de literatura similares ao que estão a fazer e não fazer o mesmo. Caso
-existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
+Critérios de exclusão: Review articles (110); Encyclopedia (11); Book chapters (81); Conference abstracts (2); Book reviews (1); Correspondence (1); Data articles (1); Discussion (3); Editorials (6); Mini reviews (8); Short communications (3); Other (17)
 
 ### Pesquisa nas bases de dados bibliográficas
 
 Vamos colocar um exemplo com as pesquisas nas bases de dados:
+* [Science@Direct](https://www.sciencedirect.com/search?qs=%28wildfire%29%20AND%20%28drones%29%20AND%20%28%22machine%20Learning%22%20OR%20prediction%20OR%20%22Deep%20Learning%22%20OR%20%22Predictive%20Analytics%22%29)
 * [SpringerLink](https://link.springer.com/search?new-search=true&query=%28wildfire%29+AND+%28drones%29+AND+%28%22machine+Learning%22+OR+prediction+OR+%22Deep+Learning%22+OR+%22Predictive+Analytics%22%29)
-* [Science@Direct](https://www.sciencedirect.com/search?qs=%28wildfire%29%20AND%20%28drones%29%20AND%20%28%22machine%20Learning%22%20OR%20prediction%20OR%20%22Deep%20Learning%22%20OR%20%22Predictive%20Analytics%22%29) 
 * IEEE Digital Library
 * ACM Digital Library
 
@@ -205,6 +200,68 @@ write.bib(as.BibEntry(merged_data), file = "exported_data.bib")
 Depois importar no zotero através do menu `File -> Import...` e selecionar o ficheiro `exported_data.bib`.
 
 Um exemplo de uma SLR [aqui](https://ieeexplore.ieee.org/document/9693903) e [aqui](https://aisel.aisnet.org/capsi2021/18)(mais simples).
+
+#
+
+
+Convém fazer uma contextualização em relação a problema, nomeadamente para perceber como é que se está a investigar, tipo
+de terminologia utilizada, por exemplo para perceber que estudos estão a ser feitos para "afinar" as questões de pesquisa e 
+termos/sinónimos a utilizar na string de pesquisa para fazer a introdução à revisão de literatura.
+Ver exemplo [aqui](https://elicit.com/notebook/6b00c2c5-a34a-4df3-94ee-3db1663e53a5). Depois podem interagir com os PDFs dos artigos e pedirem para resumir as ideias principais, utilizando por exemplo ChatPDF ou analisando com mais detalhe, lendo com 
+algum cuidado os artigos.
+Outro aspeto importante é perceber se existem revisões de literatura similares ao que estão a fazer e não fazer o mesmo. Caso
+existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
+
+
+# Datasets 
+
+```
+datasets
+    https://ieee-dataport.org/datasets
+    https://www.kaggle.com/
+    https://fivethirtyeight.com/
+    https://www.data.gov/
+    https://www.quandl.com/
+    https://www.reddit.com/r/datasets/
+    https://archive.ics.uci.edu/ml/index.php
+        university of california
+    Exploratory data catalog
+        https://exploratory.io/note/kanaugust/Online-Seminar-23-Exploratory-Data-Catalog-Democratize-Data-within-Organization-rvM6bOq3XV
+    https://data.world/
+    https://datasetsearch.research.google.com/
+    https://opendata.stackexchange.com/
+    Government
+        http://data.un.org
+            United Nations
+        http://www.data.gov
+            US
+        http://data.gov.uk
+            United Kingdom
+        http://www.data.gouv.fr
+            France
+        http://data.gov.gh
+            Ghana
+        http://data.gov.au
+            Australia
+        https://www.govdata.de
+            Germany
+        http://www.gov.hk/en/them/psi/datasets
+            Hong Kong
+        http://www.data.go.jp
+            Japan
+        http://www.data.gov/opendatasites
+    https://www.europeandataportal.eu/en
+    https://basedosdados.org/
+    sport
+        https://footystats.org/predictions/
+        https://sports-statistics.com/soccer/fifa-2022-dataset-csvs/
+    https://data.oecd.org/
+    https://rapidapi.com/hub
+        APIs
+        Acesso a dados
+        algumas free
+```
+
 
 # Bibliografia
 
