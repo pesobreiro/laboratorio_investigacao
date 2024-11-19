@@ -171,7 +171,7 @@ options(width=100)
 S <- summary(object = results, k = 10, pause = FALSE)
 ```
 
-```{r}
+```{r fig.height=10, fig.width=20}
 plot(x = results, k = 10, pause = FALSE)
 ```
 
