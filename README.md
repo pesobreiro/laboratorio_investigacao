@@ -45,8 +45,8 @@ Documentação e recursos para a disciplina de Laboratório de Investigação. C
 * [IEEE Digital Library](http://ieeexplore.ieee.org)
 * [ISI Web of Science](http://www.isiknowledge.com)
 * [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/)
-* [Science@Direct](http://www.sciencedirect.comg
-g [Scopus](http://www.scopus.com)
+* [Science\@Direct](http://www.sciencedirect.com)
+* [Scopus](http://www.scopus.com)
 * [Springer Link](http://link.springer.com)
 
 # Ferramentas apoio
