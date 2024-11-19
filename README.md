@@ -68,11 +68,9 @@ Documentação e recursos para a disciplina de Laboratório de Investigação. C
 
 ```
 install.packages("bibliometrix")
-```
-
 file <- "./exemplos/caso1/ScienceDirect_citations_1731876458350.bib"
-
 M <- convert2df(file = file, dbsource = "isi", format = "bibtex")
+```
 
 ## Pesquisa com AI
 A Prompt mágica
