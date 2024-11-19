@@ -86,7 +86,6 @@ Make sure that your hypotheses are precisely stated and incorporate a comparison
 group. Begin each hypothesis with "Hypothesize that" and generate 100 hypotheses.
 ```
 
-
 # Documentos de apoio
 
 * Etapas gerais para revisão de literatura [aqui](./docs/01.revisao_literatura.pdf)
