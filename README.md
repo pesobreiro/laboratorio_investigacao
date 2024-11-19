@@ -221,39 +221,28 @@ existam, tentar alterar o âmbito ou o problema de estudo para diferenciar.
 # Datasets 
 
 ```
-datasets
-    https://ieee-dataport.org/datasets
-    https://www.kaggle.com/
+    IEEE: https://ieee-dataport.org/datasets
+    Kaggle: https://www.kaggle.com/
     https://fivethirtyeight.com/
     https://www.data.gov/
     https://www.quandl.com/
     https://www.reddit.com/r/datasets/
-    https://archive.ics.uci.edu/ml/index.php
-        university of california
-    Exploratory data catalog
-        https://exploratory.io/note/kanaugust/Online-Seminar-23-Exploratory-Data-Catalog-Democratize-Data-within-Organization-rvM6bOq3XV
-    https://data.world/
-    https://datasetsearch.research.google.com/
+    university of california: https://archive.ics.uci.edu/ml/index.php
+        
+    Exploratory data catalog: https://exploratory.io/note/kanaugust/Online-Seminar-23-Exploratory-Data-Catalog-Democratize-Data-within-Organization-rvM6bOq3XV
+    Data world: https://data.world/
+    Google: https://datasetsearch.research.google.com/
     https://opendata.stackexchange.com/
     Government
-        http://data.un.org
-            United Nations
-        http://www.data.gov
-            US
-        http://data.gov.uk
-            United Kingdom
-        http://www.data.gouv.fr
-            France
-        http://data.gov.gh
-            Ghana
-        http://data.gov.au
-            Australia
-        https://www.govdata.de
-            Germany
-        http://www.gov.hk/en/them/psi/datasets
-            Hong Kong
-        http://www.data.go.jp
-            Japan
+        United Nations: http://data.un.org
+        US: http://www.data.gov
+        United Kingdom: http://data.gov.uk
+        France: http://www.data.gouv.fr
+        Ghana: http://data.gov.gh
+        Australia: http://data.gov.au
+        Germany: https://www.govdata.de
+        Hong Kong: http://www.gov.hk/en/them/psi/datasets
+        Japan: http://www.data.go.jp
         http://www.data.gov/opendatasites
     https://www.europeandataportal.eu/en
     https://basedosdados.org/
@@ -264,6 +253,7 @@ datasets
     https://rapidapi.com/hub
         APIs
         Acesso a dados
+
         algumas free
 ```
 
