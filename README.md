@@ -176,14 +176,11 @@ Vamos colocar um exemplo com as pesquisas nas bases de dados:
 
 Na springerlink exportar os ficheiros um por cada página ([ver ficheiros](./exemplos/caso1/)) depois processamos em R, ver [exemplo](./exemplos/caso1/1.slr_bibtexCleaning.Rmd).
 
-### Processar os artigos analisados
-
-Ver exemplo de bibliometrix para processar os artigos analisados [aqui](./exemplos/caso1/bibliometrix.Rmd).
-
 ### Seleção de artigos com asreview
 
-Ver apresentação como é que se pode utilizar o ASReview para selecionar os artigos [aqui](./docs/01.revisao_literatura.pdf).
-
+Ver apresentação como é que se podem utilizar o ASReview para selecionar os artigos [aqui](./docs/01.revisao_literatura.pdf).
+Em alternativa também podem importar os artigos exportados da pesquisa para bibtex e importar para o Zotero. A vantagem é que o zotero faz a gestão dos artigos
+e podem inclusive remover os duplicados. Esta lista de artigos depois pode ser exportada para csv para tratarem no asreview. 
 
 ###  Importar as referências selecionadas para o Zotero
 
@@ -200,6 +197,17 @@ write.bib(as.BibEntry(merged_data), file = "exported_data.bib")
 Depois importar no zotero através do menu `File -> Import...` e selecionar o ficheiro `exported_data.bib`.
 
 Um exemplo de uma SLR [aqui](https://ieeexplore.ieee.org/document/9693903) e [aqui](https://aisel.aisnet.org/capsi2021/18)(mais simples).
+
+Neste caso podem utilizar os ficheiros selecionados
+e realizarem a análise exportando a lista final dos artigos selecionados para bibtex e importar para o Zotero.
+
+### Processar os artigos analisados
+
+Ver exemplo de bibliometrix para processar os artigos analisados [aqui](./exemplos/caso1/bibliometrix.Rmd) e realizarem uma análise quantitativa dos artigos selecionados. 
+Depois podem complementar esta análise com a analise qualitativa dos artigos selecionados processando os artigos selecionados no asreview.
+Um exemplo como podem fazer a análise qualitativa dos artigos selecionados [aqui](./docs/quality_assessment_research_questions.xlsx).
+Cada questão de pesquisa é processada e analisada de forma qualitativa, por exemplo, para a questão de pesquisa 1. 
+É possivel estruturar as colunas também para identificar por exemplo os algoritmos utilizados, as variáveis utilizadas, os equipamentos utilizados, etc.
 
 #
 
